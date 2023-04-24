@@ -180,7 +180,7 @@ img {
 @media screen and (max-width: 767px) {
     .nav__manu{
       position: fixed;
-      bottom: 0;
+      bottom: -100%;
       left: 0;
       width: 100%;
       background-color: var(--body-color);
@@ -220,7 +220,9 @@ img {
   color: var(--first-color);
 }
 /* show menu */
-
+.show-menu{
+  bottom: 0;
+}
 
 /* Active link */
 
@@ -229,8 +231,24 @@ img {
 
 
 /*==================== HOME ====================*/
+.home__container{
+  gap: 1rem;
+}
+.home__content{
+  grid-template-columns: .5fr 3fr;
+  padding-top: 3.5rem;
+  align-items: center;
+}
 
-
+.home__social{
+  display: grid;
+  grid-template-columns:max-content;
+  row-gap: 1rem;
+}
+.home_social-icon{
+  font-size: 1.25rem;
+  color: var(--first-color);
+}
 /*==================== BUTTONS ====================*/
 
 
